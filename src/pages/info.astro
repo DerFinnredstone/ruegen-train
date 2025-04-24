@@ -7,37 +7,55 @@ import "../css/desktop.css";
 import "../css/mobile.css";
 import Footer from "../components/footer.astro";
 import Head from "../components/header.astro";
+import Navbar from "../components/nav.astro"
 
 //parts
-import Sass from "../components/parts/sass.astro";
-import Lanc from "../components/parts/lanc.astro";
-import Saga from "../components/parts/saga.astro";
-import Binz from "../components/parts/binz.astro";
-import Liet from "../components/parts/liet.astro";
-import Berg from "../components/parts/berg.astro";
-import Tesc from "../components/parts/tesc.astro";
-import Samt from "../components/parts/samt.astro";
-import Ramb from "../components/parts/ramb.astro";
-import Alte from "../components/parts/alte.astro";
-import Rueg from "../components/parts/rueg.astro";
-import Stral from "../components/parts/stral.astro";
-import Safe from "../components/parts/safe.astro";
-import Putb from "../components/parts/putb.astro";
-import Laut from "../components/parts/laut.astro";
-import Lamo from "../components/parts/lamo.astro";
-import Beuc from "../components/parts/beuc.astro";
-import Sera from "../components/parts/sera.astro";
-import Pose from "../components/parts/pose.astro";
-import Seel from "../components/parts/seel.astro";
-import Bilb from "../components/parts/bilb.astro";
-import Jagd from "../components/parts/jagd.astro";
-import Garf from "../components/parts/garf.astro";
-import Selw from "../components/parts/selw.astro";
-import Selo from "../components/parts/selo.astro";
-import Baab from "../components/parts/baab.astro";
-import Phil from "../components/parts/phil.astro";
-import Goeh from "../components/parts/goeh.astro";
+import Sass from "../components/sass.astro";
+import Lanc from "../components/lanc.astro";
+import Saga from "../components/saga.astro";
+import Binz from "../components/binz.astro";
+import Liet from "../components/liet.astro";
+import Berg from "../components/berg.astro";
+import Tesc from "../components/tesc.astro";
+import Samt from "../components/samt.astro";
+import Ramb from "../components/ramb.astro";
+import Alte from "../components/alte.astro";
+import Rueg from "../components/rueg.astro";
+import Stral from "../components/stral.astro";
+import Safe from "../components/safe.astro";
+import Putb from "../components/putb.astro";
+import Laut from "../components/laut.astro";
+import Lamo from "../components/lamo.astro";
+import Beuc from "../components/beuc.astro";
+import Sera from "../components/sera.astro";
+import Pose from "../components/pose.astro";
+import Seel from "../components/seel.astro";
+import Bilb from "../components/bilb.astro";
+import Jagd from "../components/jagd.astro";
+import Garf from "../components/garf.astro";
+import Selw from "../components/selw.astro";
+import Selo from "../components/selo.astro";
+import Baab from "../components/baab.astro";
+import Phil from "../components/phil.astro";
+import Goeh from "../components/goeh.astro";
 ---
+
+<!--
+
+<style>
+    nav {
+        display: flex;
+        gap: 1rem;
+        padding: 1rem;
+        overflow-x: auto;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: #000;
+    }
+</style>
+-->
 
 <!doctype html>
 <html lang="en" class="no-js">
@@ -54,7 +72,8 @@ import Goeh from "../components/parts/goeh.astro";
 	<body>
 		<Head />
 		<main class="cd-main-content">
-			<h1 class="center re9">
+			<Navbar />
+			<h1 class="center re9" id="9">
 				RE9 <br /> Stralsund - Sassnitz; Baltic resort Binz
 			</h1>
 			<div class="items">
@@ -95,7 +114,7 @@ import Goeh from "../components/parts/goeh.astro";
 					<Stral />
 				</div>
 			</div>
-			<h1 class="center re27">
+			<h1 class="center re27" id="27">
 				RE27 <br /> Bergen(Ruegen) - Sassnitz Ferry terminal
 			</h1>
 			<div class="items">
@@ -106,7 +125,7 @@ import Goeh from "../components/parts/goeh.astro";
 					<Safe />
 				</div>
 			</div>
-			<h1 class="center zuggebringer">
+			<h1 class="center zugebringer" id="z">
 				Zu|g|ebringer <br /> Bergen(Ruegen) - Lauterbach Pier
 			</h1>
 			<div class="items">
@@ -123,7 +142,7 @@ import Goeh from "../components/parts/goeh.astro";
 					<Lamo />
 				</div>
 			</div>
-			<h1 class="center roland">
+			<h1 class="center roland" id="P">
 				Racing Roland <br /> Lauterbach Pier - Goehren
 			</h1>
 			<div class="items">

@@ -1,0 +1,103 @@
+:root {
+	/*Always the same*/
+	--text-color: #797979;
+    --light-text-color: #999999;
+	--background: #2e2e2e;
+	--light-background: #3e3e3e;
+	/*Light*/
+	--light-primary: #3ECCBB;
+	--light-secondary: #59C5A3;
+	--light-tertiary: #6FC395;
+	--light-c4: #84C28C;
+	--light-c5: #8FC581;
+	--light-c6: #91C86A;
+	--light-c7: #A3D45E;
+	--light-highlight: #DEFF0A;
+	/*Normal*/
+	--primary: #2A9D8F;
+	--secondary: #38A17F;
+	--tertiary: #45A46F;
+	--c4: #53A85F;
+	--c5: #61AC4F;
+	--c6: #6EAF40;
+	--c7: #7CB330;
+	--highlight: #A5BE00;
+	/* Dark Theme Overrides */
+	--dark-primary: #15514A;
+	--dark-secondary: #1B4B3C;
+	--dark-tertiary: #1E4831;
+	--dark-c4: #224426;
+	--dark-c5: #284620;
+	--dark-c6: #2F4A1C;
+	--dark-c7: #385115;
+	--dark-highlight: #586600;
+}
+
+/*
+Design from the cards | Desktop
+*/
+.items {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+	gap: 15px;
+	padding: 15px;
+}
+
+.items div {
+	background-color: var(--light-background);
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	padding: 15px;
+}
+
+.items .container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+        "br br"
+        "image image"
+        "tag type"
+        "desc desc";
+    gap: 0.5rem;
+}
+
+.items .br {
+    grid-area: br;
+    font-size: 1.5rem;
+	font-weight: bold;
+	margin-bottom: 10px;
+	color: var(--dark-highlight);
+}
+
+.items .img {
+    grid-area: image;
+    width: 100%;
+    height: auto;
+}
+
+.items .tag,
+.items .type {
+    margin: 0;
+}
+
+.items .type {
+    grid-area: type;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.items .tag {
+    grid-area: tag;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    color: var(--light-text-color);
+}
+
+.items .desc {
+    grid-area: desc;
+    font-size: 1rem;
+	color: var(--text-color);
+	line-height: 1.6;
+}

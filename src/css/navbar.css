@@ -1,19 +1,42 @@
 :root {
-	--primary-color: #b05279;
-	--secondary-color: #9e86c8;
+  /*Always the same*/
 	--text-color: #797979;
 	--background: #2e2e2e;
-	--white: #d6d6d6;
-	--blue: #6c99bb;
-	--green: #b4d273;
-	--orange: #e87d3e;
-	--yellow: #e5b567;
+  /*Light*/
+  --light-primary: #3ECCBB;
+  --light-secondary: #59C5A3;
+  --light-tertiary: #6FC395;
+  --light-c4: #84C28C;
+  --light-c5: #8FC581;
+  --light-c6: #91C86A;
+  --light-c7: #A3D45E;
+  --light-highlight: #DEFF0A;
+  /*Normal*/
+  --primary: #2A9D8F;
+  --secondary: #38A17F;
+  --tertiary: #45A46F;
+  --c4: #53A85F;
+  --c5: #61AC4F;
+  --c6: #6EAF40;
+  --c7: #7CB330;
+  --highlight: #A5BE00;
+  /* Dark Theme Overrides */
+  --dark-primary: #15514A;
+  --dark-secondary: #1B4B3C;
+  --dark-tertiary: #1E4831;
+  --dark-c4: #224426;
+  --dark-c5: #284620;
+  --dark-c6: #2F4A1C;
+  --dark-c7: #385115;
+  --dark-highlight: #586600;
 }
 
+
+ 
 nav {
   display: flex;
   justify-content: center;
-  background-color: var(--secondary-color);
+  background-color: var(--secondary);
   padding: 1%;
   border-radius: 5px;
   margin: 2%;

@@ -1,11 +1,13 @@
 ---
-// Component Imports
+// CSS
 import '../css/global.css'
 import "../css/style.css";
 import "../css/id.css";
-import "../css/info.css";
+import "../css/gallery.css";
 import "../css/desktop.css";
 import "../css/mobile.css";
+
+//Components
 import Footer from "../components/footer.astro";
 import Head from "../components/header.astro";
 ---
@@ -18,9 +20,34 @@ import Head from "../components/header.astro";
 	</head>
 	<body>
 		<Head />
-		<main class="cd-main-content">
+		<main>
 			<div class="items">
-				<div class="station center">WORK IN PROGRESS</div>
+				<div class="container">
+					<div class="br">BR 200</div>
+					<img src="x" alt="x" class="img">
+						<div class="tag">
+							Steam, Historic, Special, Electric, Electric-Diesel, Diesel
+						</div>
+						<div class="type">
+							Train, Station
+						</div>
+					<div class="desc">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius ab, cupiditate aliquid molestias maxime dolores similique nobis nesciunt laborum mollitia laudantium, non laboriosam, corporis praesentium voluptatum minima dicta accusantium neque.
+					</div>
+				</div>
+				<div class="container">
+					<div class="br">BR 52</div>
+					<img src="x" alt="x" class="img">
+						<div class="tag">
+							Steam, Historic, Special, Electric, Electric-Diesel, Diesel
+						</div>
+						<div class="type">
+							Train, Station
+						</div>
+					<div class="desc">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque obcaecati quidem hic fugit sed quasi ratione consequatur tempora molestiae iste.
+					</div>
+				</div>
 			</div>
 			<Footer />
 		</main>

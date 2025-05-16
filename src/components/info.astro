@@ -1,44 +1,36 @@
 ---
-import '../css/color.css';
-import '../css/global.css';
-import "../css/style.css";
-import "../css/id.css";
-import "../css/info.css";
-import "../css/desktop.css";
-import "../css/mobile.css";
-import Footer from "../components/footer.astro";
-import Head from "../components/header.astro";
-import Navbar from "../components/nav.astro"
+import '../styles/global.css';
+import Navbar from "./nav.astro"
 
 //parts
-import Sass from "../components/sass.astro";
-import Lanc from "../components/lanc.astro";
-import Saga from "../components/saga.astro";
-import Binz from "../components/binz.astro";
-import Liet from "../components/liet.astro";
-import Berg from "../components/berg.astro";
-import Tesc from "../components/tesc.astro";
-import Samt from "../components/samt.astro";
-import Ramb from "../components/ramb.astro";
-import Alte from "../components/alte.astro";
-import Rueg from "../components/rueg.astro";
-import Stral from "../components/stral.astro";
-import Safe from "../components/safe.astro";
-import Putb from "../components/putb.astro";
-import Laut from "../components/laut.astro";
-import Lamo from "../components/lamo.astro";
-import Beuc from "../components/beuc.astro";
-import Sera from "../components/sera.astro";
-import Pose from "../components/pose.astro";
-import Seel from "../components/seel.astro";
-import Bilb from "../components/bilb.astro";
-import Jagd from "../components/jagd.astro";
-import Garf from "../components/garf.astro";
-import Selw from "../components/selw.astro";
-import Selo from "../components/selo.astro";
-import Baab from "../components/baab.astro";
-import Phil from "../components/phil.astro";
-import Goeh from "../components/goeh.astro";
+import Sass from "./sass.astro";
+import Lanc from "./lanc.astro";
+import Saga from "./saga.astro";
+import Binz from "./binz.astro";
+import Liet from "./liet.astro";
+import Berg from "./berg.astro";
+import Tesc from "./tesc.astro";
+import Samt from "./samt.astro";
+import Ramb from "./ramb.astro";
+import Alte from "./alte.astro";
+import Rueg from "./rueg.astro";
+import Stral from "./stral.astro";
+import Safe from "./safe.astro";
+import Putb from "./putb.astro";
+import Laut from "./laut.astro";
+import Lamo from "./lamo.astro";
+import Beuc from "./beuc.astro";
+import Sera from "./sera.astro";
+import Pose from "./pose.astro";
+import Seel from "./seel.astro";
+import Bilb from "./bilb.astro";
+import Jagd from "./jagd.astro";
+import Garf from "./garf.astro";
+import Selw from "./selw.astro";
+import Selo from "./selo.astro";
+import Baab from "./baab.astro";
+import Phil from "./phil.astro";
+import Goeh from "./goeh.astro";
 ---
 <!doctype html>
 <html lang="en" class="no-js">
@@ -54,7 +46,7 @@ import Goeh from "../components/goeh.astro";
 			<h1 class="center re9" id="9">
 				RE9 <br /> Stralsund - Sassnitz; Baltic resort Binz
 			</h1>
-			<div class="items">
+			<div class="items" id="info">
 				<div id="9sass">
 					<Sass />
 				</div>
@@ -146,7 +138,6 @@ import Goeh from "../components/goeh.astro";
 				<div id="Pphil"><Phil /></div>
 				<div id="Pgoeh"><Goeh /></div>
 			</div>
-			<Footer />
 		</main></body
 	>
 </html>

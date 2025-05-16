@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+:root {
+	/*Always the same*/
+	--text-color: #797979;
+    --light-text-color: #999999;
+	--background: #2e2e2e;
+	/*Items*/
+	--item-background: #3D3D3D;
+	--item-light-background: #474747;
+	/*Light*/
+	--light-primary: #3ECCBB;
+	--light-secondary: #59C5A3;
+	--light-tertiary: #6FC395;
+	--light-c4: #84C28C;
+	--light-c5: #8FC581;
+	--light-c6: #91C86A;
+	--light-c7: #A3D45E;
+	--light-highlight: #DEFF0A;
+	/*Normal*/
+	--primary: #2A9D8F;
+	--secondary: #38A17F;
+	--tertiary: #45A46F;
+	--c4: #53A85F;
+	--c5: #61AC4F;
+	--c6: #6EAF40;
+	--c7: #7CB330;
+	--highlight: #A5BE00;
+	/* Dark Theme Overrides */
+	--dark-primary: #15514A;
+	--dark-secondary: #1B4B3C;
+	--dark-tertiary: #1E4831;
+	--dark-c4: #224426;
+	--dark-c5: #284620;
+	--dark-c6: #2F4A1C;
+	--dark-c7: #385115;
+	--dark-highlight: #586600;
+
+	--white: #d6d6d6;
+	--blue: #6c99bb;
+	--green: #b4d273;
+	--orange: #e87d3e;
+	--yellow: #e5b567;
+
+}
+
+html,
+body {
+	margin: 0;
+	font-family: "Titillium Web", sans-serif;
+	font-weight: 600;
+	font-style: normal;
+}
+
+body {
+	font-family: "Titillium Web", sans-serif;
+	font-weight: 600;
+	font-style: normal;
+	color: var(--text-color);
+	background-color: var(--background);
+}
+
+a {
+	color: var(--primary);
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+nav {
+	display: flex;
+	justify-content: center;
+	background-color: var(--secondary);
+	padding: 1%;
+	border-radius: 5px;
+	margin: 2%;
+	text-decoration: none;
+  }
+  
+nav a {
+	background: none;
+	border: none;
+	font-size: 16px;
+	margin: 0 10px;
+	cursor: pointer;
+	color: black;
+}
+  
+nav a:hover {
+	text-decoration: underline;
+}
+  
+/*
+Color for Trains
+*/
+
+.re27 {
+	color: #5b9bd5;
+}
+
+.re9 {
+	color: #9b2b48;
+}
+
+.zugebringer {
+	color: #e2ba86;
+}
+
+.roland {
+	color: #9ec8c2;
+}
+
+/*
+Global Cards Design
+*/
+.items {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+	gap: 15px;
+	padding: 15px;
+}
+
+.items .station {
+	font-size: 1.5rem;
+	font-weight: bold;
+	margin-bottom: 10px;
+	color: var(--dark-highlight);
+    background-color: var(--item-light-background);
+}
+
+.items .desc {
+	grid-area: desc;
+    font-size: 1rem;
+	color: var(--text-color);
+    background-color: var(--item-light-background);
+	line-height: 1.6;
+}
+
+.items div {
+	background-color: var(--item-background);
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	padding: 15px;
+}
+
+.gallery .items,
+.gallery .container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+        "br br"
+        "image image"
+        "tag type"
+        "desc desc";
+    gap: 0.5rem;
+}
+
+.items .br {
+    grid-area: br;
+    font-size: 1.5rem;
+	font-weight: bold;
+	margin-bottom: 10px;
+	color: var(--dark-highlight);
+    background-color: var(--item-light-background);
+}
+
+.items .img {
+    grid-area: image;
+    width: 100%;
+    height: auto;
+}
+
+.items .tag,
+.items .type {
+    margin: 0;
+}
+
+.items .type {
+    grid-area: type;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    background-color: var(--item-light-background);
+}
+
+.items .tag {
+    grid-area: tag;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    color: var(--light-text-color);
+    background-color: var(--item-light-background);
+}
+
+/*END*/
+
+.center {
+	text-align: center;
+	display: flex;
+	justify-content: center;
+}
+
+.announcement{
+    background-color: #971717;
+    padding: 2%;
+    margin: 3%;
+    border-radius: 10px;
+	gap: 1.5rem;
+}
+
+.announcement h1 {
+    justify-content: center;
+}
+
+@media only screen and (max-width: 800px) {
+	.items {
+		grid-template-columns: 1fr;
+		gap: 10px;
+		padding: 10px;
+	}
+
+	.station {
+		font-size: 1.2rem;
+	}
+
+	.desc {
+		font-size: 0.95rem;
+	}
+}

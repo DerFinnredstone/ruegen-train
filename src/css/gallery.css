@@ -1,38 +1,3 @@
-:root {
-	/*Always the same*/
-	--text-color: #797979;
-    --light-text-color: #999999;
-	--background: #2e2e2e;
-	--light-background: #3e3e3e;
-	/*Light*/
-	--light-primary: #3ECCBB;
-	--light-secondary: #59C5A3;
-	--light-tertiary: #6FC395;
-	--light-c4: #84C28C;
-	--light-c5: #8FC581;
-	--light-c6: #91C86A;
-	--light-c7: #A3D45E;
-	--light-highlight: #DEFF0A;
-	/*Normal*/
-	--primary: #2A9D8F;
-	--secondary: #38A17F;
-	--tertiary: #45A46F;
-	--c4: #53A85F;
-	--c5: #61AC4F;
-	--c6: #6EAF40;
-	--c7: #7CB330;
-	--highlight: #A5BE00;
-	/* Dark Theme Overrides */
-	--dark-primary: #15514A;
-	--dark-secondary: #1B4B3C;
-	--dark-tertiary: #1E4831;
-	--dark-c4: #224426;
-	--dark-c5: #284620;
-	--dark-c6: #2F4A1C;
-	--dark-c7: #385115;
-	--dark-highlight: #586600;
-}
-
 /*
 Design from the cards | Desktop
 */
@@ -44,7 +9,7 @@ Design from the cards | Desktop
 }
 
 .items div {
-	background-color: var(--light-background);
+	background-color: var(--item-background);
 	border-radius: 8px;
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 	padding: 15px;
@@ -67,6 +32,7 @@ Design from the cards | Desktop
 	font-weight: bold;
 	margin-bottom: 10px;
 	color: var(--dark-highlight);
+    background-color: var(--item-light-background);
 }
 
 .items .img {
@@ -85,6 +51,7 @@ Design from the cards | Desktop
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
+    background-color: var(--item-light-background);
 }
 
 .items .tag {
@@ -93,11 +60,13 @@ Design from the cards | Desktop
     gap: 1rem;
     flex-wrap: wrap;
     color: var(--light-text-color);
+    background-color: var(--item-light-background);
 }
 
 .items .desc {
     grid-area: desc;
     font-size: 1rem;
 	color: var(--text-color);
+    background-color: var(--item-light-background);
 	line-height: 1.6;
 }
